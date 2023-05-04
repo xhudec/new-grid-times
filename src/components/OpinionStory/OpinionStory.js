@@ -29,6 +29,10 @@ const Wrapper = styled.article`
     flex-direction: column;
     gap: 8px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    gap: 0;
+  }
 `;
 
 const Avatar = styled.img`

@@ -42,7 +42,7 @@ const Header = () => {
 };
 
 const SuperHeader = styled.div`
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     padding: 16px 0 0;
     margin-bottom: 80px;
   }
@@ -59,7 +59,7 @@ const Row = styled(MaxWidthWrapper)`
     "left-group right-group"
     "main-header main-header";
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     grid-template-columns: min-content auto min-content;
     grid-template-rows: auto;
     justify-content: space-between;
@@ -84,7 +84,7 @@ const ActionGroup = styled.div`
     display: block;
   }
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     padding: 0 32px;
     color: inherit;
     background-color: transparent;
@@ -105,7 +105,7 @@ const MainHeader = styled(MaxWidthWrapper)`
   align-items: center;
   justify-content: center;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -116,10 +116,10 @@ const RightActionGroup = styled(ActionGroup)`
   justify-content: flex-end;
 `;
 
-const RightActionGroupMobileContent = styled.div`¨
+const RightActionGroupMobileContent = styled.div`
   display: block;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -127,7 +127,7 @@ const RightActionGroupMobileContent = styled.div`¨
 const RightActionGroupDesktopContent = styled.div`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: flex;
     flex-direction: column;
     justify-content: inherit;
